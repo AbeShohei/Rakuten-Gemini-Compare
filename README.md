@@ -189,9 +189,21 @@ npm run test
 npm run test:e2e
 ```
 
-## 📄 ライセンス
 
-MIT License
+## デプロイ（Netlify推奨）
+
+- Build command: `npm run build`
+- Publish directory: `dist`
+- 環境変数はNetlifyの「Site settings > Environment variables」で設定
+
+## Supabase DB初期化
+
+Supabase SQL Editorで下記を実行
+
+```sql
+-- compare_history, favorites テーブル作成 & RLS
+（ここに前述のSQLを貼り付け）
+```
 
 ## 🤝 コントリビューション
 
